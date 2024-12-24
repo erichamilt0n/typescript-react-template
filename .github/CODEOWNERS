@@ -1,0 +1,34 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+* @global-owner1 @global-owner2
+
+# CI/CD
+.github/workflows/ @devops-team
+.circleci/ @devops-team
+
+# Security
+SECURITY.md @security-team
+.snyk @security-team
+
+# Frontend
+src/ @frontend-team
+*.tsx @frontend-team
+*.ts @frontend-team
+*.css @frontend-team
+
+# Config files
+*.json @tech-leads
+.eslintrc.* @tech-leads
+.prettierrc.* @tech-leads
+tsconfig.* @tech-leads
+
+# Documentation
+*.md @docs-team
+docs/ @docs-team
+
+# Replace with actual GitHub usernames or teams
+# Example:
+# * @erichamilt0n
+# .github/workflows/ @your-devops-team
